@@ -15,8 +15,8 @@ int main()
     int matriz [CANTFILAS][CANTCOLUM] =
     {
         {1, 2, 3, 4},
-        {5, -6, -6, 20},
-        {1, 15, 11, 10}
+        {-2, -6, -6, -2},
+        {10, 15, 11, 10}
     };
 
     int vector [CANTFILAS];
@@ -27,9 +27,11 @@ int main()
     {
         vector [i] = matriz [i][0];
 
+        cantOcurrenciasMax = 1;
+
         for (int j = 0; j < CANTCOLUM; j++)
         {
-            cantOcurrencias = cantOcurrenciasMax = 1;
+            cantOcurrencias = 1;
 
             for (int k = j + 1; k < CANTCOLUM; k++)
             {
